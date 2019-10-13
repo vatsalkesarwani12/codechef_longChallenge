@@ -30,7 +30,7 @@ class Codechef
 			bufferPointer = bytesRead = 0;
 		}
 
-		public Reader(String file_name) throws IOException 
+		public Reader(String file_name) throws IOException
 		{
 			din = new DataInputStream(new FileInputStream(file_name));
 			buffer = new byte[BUFFER_SIZE];
@@ -138,10 +138,10 @@ class Codechef
 	}
 <<<<<<< HEAD
 =======
-		final private int BUFFER_SIZE = 1 << 16; 
-		private DataInputStream din; 
-		private byte[] buffer; 
-		private int bufferPointer, bytesRead; 
+		final private int BUFFER_SIZE = 1 << 16;
+		private DataInputStream din;
+		private byte[] buffer;
+		private int bufferPointer, bytesRead;
 >>>>>>> newbranch
 
 		public Reader()
@@ -151,7 +151,7 @@ class Codechef
 			bufferPointer = bytesRead = 0;
 		}
 
-		public Reader(String file_name) throws IOException 
+		public Reader(String file_name) throws IOException
 		{
 			din = new DataInputStream(new FileInputStream(file_name));
 			buffer = new byte[BUFFER_SIZE];
@@ -259,22 +259,22 @@ class Codechef
 		}
 	}
 =======
-		public void close() throws IOException 
-		{ 
-			if (din == null) 
-				return; 
-			din.close(); 
-		} 
-	} 
+		public void close() throws IOException
+		{
+			if (din == null)
+				return;
+			din.close();
+		}
+	}
 >>>>>>> parent of 3a2e7db... changes made
 =======
 >>>>>>> 848026443e0b64ed2b729cec50230b85cecb58e9
 >>>>>>> newbranch
 	public static void main (String[] args) throws java.lang.Exception
 	{
-	    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new
-         FileOutputStream(java.io.FileDescriptor.out), "ASCII"), 1024);
-		Reader sc=new Reader();
+	    //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new
+        // FileOutputStream(java.io.FileDescriptor.out), "ASCII"), 1024);
+		Scanner sc=new Scanner(System.in);
 		int t=sc.nextInt();
 		for(;t!=0;t--)
 		{
@@ -294,9 +294,9 @@ class Codechef
 		        }
 		    }
 		    if(f==n-1)
-		    out.write("YES"+"\n");
-		    else out.write("NO"+"\n");
+		    System.out.print("YES"+"\n");
+		    else System.out.print("NO"+"\n");
 		}
-		out.flush();
+	//	out.flush();
 	}
 }
